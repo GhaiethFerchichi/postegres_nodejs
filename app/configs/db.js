@@ -8,6 +8,8 @@ const config = {
     database: "bazarat",
     host: "localhost",
     dialect: "postgres",
+    logging: (msg) => logger.debug(msg),
+    logging: console.log,
   },
   production: {
     // Configuration for production environment
